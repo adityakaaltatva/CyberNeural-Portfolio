@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Brain, ShieldAlert } from 'lucide-react';
+import { Brain, ShieldAlert, Terminal } from 'lucide-react';
 import { useAppStore } from '../../store';
 import NeuralText from '../UI/NeuralText';
 import CyberButton from '../UI/CyberButton';
@@ -57,7 +57,14 @@ const NeuralCore: React.FC = () => {
         initial="hidden"
         animate="visible"
       >
-        {/* Neural Brain Icon with Rotating Borders */}
+        {/* Top Line */}
+        <motion.div className="mb-4 text-center" variants={itemVariants}>
+          <h3 className="text-sm md:text-base font-bold tracking-wide text-white/70">
+            ADITYA PANDEY
+          </h3>
+        </motion.div>
+
+        {/* Neural Brain Icon */}
         <motion.div className="relative w-32 h-32 mb-8" variants={itemVariants}>
           <motion.div
             className="absolute inset-0 flex items-center justify-center"
@@ -84,7 +91,7 @@ const NeuralCore: React.FC = () => {
           </motion.div>
         </motion.div>
 
-        {/* Text Content */}
+        {/* Text + Buttons */}
         <motion.div className="text-center max-w-xl px-4" variants={itemVariants}>
           <NeuralText
             text="This isn't a portfolio."
@@ -104,12 +111,25 @@ const NeuralCore: React.FC = () => {
             a node in the network — scanned, shielded, and protected.
           </p>
 
-          <CyberButton onClick={() => setCurrentSection('mind-map')} size="lg" color="blue">
-            <ShieldAlert className="mr-2" size={18} />
-            LAUNCH PORTFOLIO OS
-          </CyberButton>
+          {/* Button Group */}
+          <div className="flex flex-wrap gap-4 justify-center">
+            <CyberButton onClick={() => setCurrentSection('mind-map')} size="lg" color="blue">
+              <ShieldAlert className="mr-2" size={18} />
+              LAUNCH PORTFOLIO OS
+            </CyberButton>
+
+            <CyberButton
+              onClick={() => window.open('https://terminal-portfolio-roan.vercel.app/', '_blank')}
+              size="lg"
+              color="purple"
+            >
+              <Terminal className="mr-2" size={18} />
+              PORTFOLIO TERMINAL
+            </CyberButton>
+          </div>
         </motion.div>
 
+        {/* Footer */}
         <motion.div
           className="absolute bottom-8 left-0 right-0 text-center"
           initial={{ opacity: 0 }}
@@ -117,7 +137,7 @@ const NeuralCore: React.FC = () => {
           transition={{ delay: 2 }}
         >
           <p className="text-white/50 text-xs font-code">
-            CyberNeural OS v2.5.0 // Secure Memory Node Access: GRANTED
+            CyberNeural OS v2.5.0 
           </p>
         </motion.div>
       </motion.div>

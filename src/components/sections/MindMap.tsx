@@ -180,13 +180,13 @@ const MindMap: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <NeuralText 
+        {/* <NeuralText 
           text="ADITYA PANDEY"
           as="h1"
           className="text-3xl font-bold tracking-wider"
           color="blue"
           monospace
-        />
+        /> */}
       </motion.div>
 
       {/* Center Node */}
@@ -209,7 +209,7 @@ const MindMap: React.FC = () => {
           }}
         >
           <NeuralText 
-            text="OS Core"
+            text="ADITYA PANDEY"
             as="span"
             className="text-sm font-bold"
             color="blue"
