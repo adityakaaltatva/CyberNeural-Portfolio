@@ -34,14 +34,12 @@ const NeuralCore: React.FC = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      {/* BACKGROUND EFFECTS */}
       <div className="absolute inset-0 z-0 bg-gradient-radial from-electric-aqua-500/5 via-black to-black pointer-events-none">
         <div className="absolute w-[200%] h-[200%] -top-1/2 -left-1/2 animate-spin-slow">
           <div className="w-full h-full bg-[radial-gradient(circle,rgba(0,255,255,0.1)_1%,transparent_40%)] bg-repeat bg-size-[100px_100px]" />
         </div>
       </div>
 
-      {/* RADAR RING ANIMATION */}
       <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
         <motion.div
           className="w-96 h-96 rounded-full border border-glitch-purple-500"
@@ -50,14 +48,12 @@ const NeuralCore: React.FC = () => {
         />
       </div>
 
-      {/* MAIN CONTENT */}
       <motion.div
         className="relative z-10 flex flex-col items-center justify-center h-full"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        {/* Top Line */}
         <motion.div className="mb-4 text-center" variants={itemVariants}>
           <h3 className="text-sm md:text-base font-bold tracking-wide text-white/70">
             ADITYA PANDEY
@@ -91,7 +87,6 @@ const NeuralCore: React.FC = () => {
           </motion.div>
         </motion.div>
 
-        {/* Text + Buttons */}
         <motion.div className="text-center max-w-xl px-4" variants={itemVariants}>
           <NeuralText
             text="This isn't a portfolio."
@@ -115,7 +110,7 @@ const NeuralCore: React.FC = () => {
           <div className="flex flex-wrap gap-4 justify-center">
             <CyberButton onClick={() => setCurrentSection('mind-map')} size="lg" color="blue">
               <ShieldAlert className="mr-2" size={18} />
-              LAUNCH PORTFOLIO OS
+              PORTFOLIO OS
             </CyberButton>
 
             <CyberButton
