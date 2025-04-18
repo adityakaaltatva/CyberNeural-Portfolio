@@ -3,8 +3,8 @@ import { QuantumState } from '../types';
 export const quantumStatesData: QuantumState[] = [
   {
     id: 'quantum-developer',
-    title: 'The Developer',
-    description: 'A creator obsessed with clean architecture, rapid innovation, and pushing the limits of code.',
+    title: 'ADITYA PANDEY',
+    description: 'A Developer obsessed with clean architecture, rapid innovation, and pushing the limits of code.',
     timeline: [
       {
         date: '2020',

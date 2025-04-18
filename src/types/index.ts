@@ -29,7 +29,7 @@ export type Project = {
 export type Skill = {
   id: string;
   name: string;
-  category: 'frontend' | 'backend' | 'design' | 'tool' | 'soft';
+  category: 'frontend' | 'backend' | 'design' | 'tool' | 'soft'| 'blockchain' | 'database'| 'ai'|'ml'| 'devops'|'cloud';
   proficiency: number; // 0-100
   yearsExperience: number;
   projects: string[];
