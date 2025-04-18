@@ -1,0 +1,67 @@
+import { Project } from '../types';
+
+export const projectsData: Project[] = [
+  {
+    id: 'project-1',
+    name: 'NeuroSync',
+    description: 'AI-powered task management system with predictive scheduling',
+    thumbnail: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['React', 'Node.js', 'TensorFlow.js', 'MongoDB'],
+    layers: {
+      frontend: 'React with custom neural network visualization',
+      backend: 'Node.js API with Express and Socket.IO for real-time updates',
+      database: 'MongoDB with specialized schemas for ML data storage',
+      deployment: 'AWS with auto-scaling for ML processing',
+    },
+    link: 'https://neurosync.example.com',
+    repo: 'https://github.com/username/neurosync',
+    year: 2024,
+  },
+  {
+    id: 'project-2',
+    name: 'Quantum Portfolio',
+    description: 'Interactive 3D portfolio with quantum-inspired animations',
+    thumbnail: 'https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['Three.js', 'React', 'TypeScript', 'GLSL'],
+    layers: {
+      frontend: 'React with Three.js for 3D rendering and WebGL shaders',
+      backend: 'Serverless functions for contact form and analytics',
+      deployment: 'Vercel with edge caching for global performance',
+    },
+    link: 'https://quantum-portfolio.example.com',
+    repo: 'https://github.com/username/quantum-portfolio',
+    year: 2023,
+  },
+  {
+    id: 'project-3',
+    name: 'SynthWave E-Commerce',
+    description: 'Retro-futuristic online store with cyberpunk aesthetics',
+    thumbnail: 'https://images.pexels.com/photos/1687093/pexels-photo-1687093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['Next.js', 'Stripe', 'Tailwind CSS', 'Supabase'],
+    layers: {
+      frontend: 'Next.js with custom animations and theme switcher',
+      backend: 'Next.js API routes and Supabase for authentication',
+      database: 'Supabase with real-time inventory updates',
+      deployment: 'Vercel with ISR for optimal performance',
+    },
+    link: 'https://synthwave-store.example.com',
+    repo: 'https://github.com/username/synthwave-store',
+    year: 2023,
+  },
+  {
+    id: 'project-4',
+    name: 'Neural Chat',
+    description: 'AI chatbot with sentiment analysis and personality adaptation',
+    thumbnail: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['React', 'Python', 'TensorFlow', 'FastAPI'],
+    layers: {
+      frontend: 'React with real-time chat interface and mood visualization',
+      backend: 'Python FastAPI with WebSockets and ML processing',
+      database: 'PostgreSQL with vector embeddings for semantic search',
+      deployment: 'Docker containers on Google Cloud Run',
+    },
+    link: 'https://neural-chat.example.com',
+    repo: 'https://github.com/username/neural-chat',
+    year: 2022,
+  },
+];

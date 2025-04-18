@@ -1,0 +1,58 @@
+import { Memory } from '../types';
+
+export const memoriesData: Memory[] = [
+  {
+    id: 'memory-1',
+    title: 'First Line of Code',
+    description: 'Wrote my first HTML page and was amazed seeing it render in the browser',
+    date: 'June 12, 2018',
+    year: 2018,
+    type: 'milestone',
+    image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'memory-2',
+    title: 'Hackathon Victory',
+    description: 'Won first place at the regional hackathon with an AI-powered sustainability app',
+    date: 'October 5, 2021',
+    year: 2021,
+    type: 'achievement',
+    image: 'https://images.pexels.com/photos/7108/notebook-computer-chill-relax.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'memory-3',
+    title: 'First Professional Role',
+    description: 'Joined a startup as a front-end developer and worked on my first commercial project',
+    date: 'March 15, 2020',
+    year: 2020,
+    type: 'milestone',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'memory-4',
+    title: 'Open Source Contribution',
+    description: 'Had my first pull request accepted into a major open source library',
+    date: 'July 22, 2022',
+    year: 2022,
+    type: 'achievement',
+    image: 'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'memory-5',
+    title: 'Machine Learning Journey',
+    description: 'Completed a comprehensive ML course and built my first neural network',
+    date: 'February 8, 2023',
+    year: 2023,
+    type: 'learning',
+    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'memory-6',
+    title: 'Conference Speaker',
+    description: 'Gave my first tech talk at a web development conference about 3D on the web',
+    date: 'September 30, 2024',
+    year: 2024,
+    type: 'achievement',
+    image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+];

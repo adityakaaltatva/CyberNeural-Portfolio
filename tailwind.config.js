@@ -1,0 +1,93 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'neural-blue': {
+          DEFAULT: '#00a8ff',
+          50: '#e0f7ff',
+          100: '#b8ecff',
+          200: '#8adfff',
+          300: '#5ad2ff',
+          400: '#2bc5ff',
+          500: '#00a8ff',
+          600: '#0086cc',
+          700: '#006499',
+          800: '#004266',
+          900: '#002133',
+        },
+        'glitch-purple': {
+          DEFAULT: '#bf00ff',
+          50: '#f5e0ff',
+          100: '#e8b8ff',
+          200: '#db8aff',
+          300: '#ce5cff',
+          400: '#c12eff',
+          500: '#bf00ff',
+          600: '#9900cc',
+          700: '#730099',
+          800: '#4c0066',
+          900: '#260033',
+        },
+        'electric-aqua': {
+          DEFAULT: '#00ffff',
+          50: '#e0ffff',
+          100: '#b8ffff',
+          200: '#8affff',
+          300: '#5cffff',
+          400: '#2effff',
+          500: '#00ffff',
+          600: '#00cccc',
+          700: '#009999',
+          800: '#006666',
+          900: '#003333',
+        },
+        'cyber-dark': {
+          DEFAULT: '#0a0e17',
+          50: '#e6e7e9',
+          100: '#c0c3c8',
+          200: '#969ca7',
+          300: '#6b7585',
+          400: '#414964',
+          500: '#171c42',
+          600: '#13183b',
+          700: '#0f1531',
+          800: '#0b1127',
+          900: '#0a0e17',
+        },
+      },
+      fontFamily: {
+        'cyber': ['Space Grotesk', 'sans-serif'],
+        'code': ['JetBrains Mono', 'monospace'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'glitch': 'glitch 2s ease-in-out infinite',
+        'scan': 'scan 2s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        glitch: {
+          '0%, 100%': { transform: 'translate(0)' },
+          '33%': { transform: 'translate(-5px, 3px)' },
+          '66%': { transform: 'translate(5px, -3px)' },
+        },
+        scan: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+      },
+      boxShadow: {
+        'neon-blue': '0 0 5px #00a8ff, 0 0 20px rgba(0, 168, 255, 0.5)',
+        'neon-purple': '0 0 5px #bf00ff, 0 0 20px rgba(191, 0, 255, 0.5)',
+        'neon-aqua': '0 0 5px #00ffff, 0 0 20px rgba(0, 255, 255, 0.5)',
+      },
+    },
+  },
+  plugins: [],
+};
