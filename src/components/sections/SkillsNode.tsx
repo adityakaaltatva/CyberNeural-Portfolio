@@ -13,7 +13,7 @@ const SkillsNode: React.FC = () => {
   const categories = [
     { id: 'all', label: 'All Skills', icon: <Cpu size={14} /> },
     { id: 'frontend', label: 'Frontend', icon: <Code size={14} /> },
-    { id: 'backend', label: 'Backend', icon: <Server size={14} /> },
+    { id: 'backend', label: 'Backend', icon: <Server className="w-4 h-4" /> },
     { id: 'design', label: 'Design', icon: <PaintBucket size={14} /> },
     { id: 'soft', label: 'Soft Skills', icon: <Brain size={14} /> },
     { id: 'tool', label: 'Tools', icon: <Wrench size={14} /> },

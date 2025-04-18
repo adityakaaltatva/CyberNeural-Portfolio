@@ -6,7 +6,7 @@ export type Node = {
   position: [number, number, number];
   connections: string[];
   year?: number;
-  details?: Record<string, any>;
+  details?: Record<string, unknown>;
 };
 
 export type Project = {

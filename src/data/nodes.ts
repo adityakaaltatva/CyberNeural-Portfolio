@@ -33,4 +33,12 @@ export const nodesData: Node[] = [
     position: [0, 0, -10],
     connections: ['node-skills', 'node-timeline'],
   },
+  {
+    id: 'node-quantum',
+    type: 'quantum',
+    name: 'Quantum portfilo',
+    description: 'Quantum state of my portfolio',
+    position: [0, 0, -10],
+    connections: ['node-skills', 'node-timeline'],
+  }
 ];

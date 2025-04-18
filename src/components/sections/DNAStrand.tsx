@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Canvas, useFrame } from '@react-three/fiber';
+// import {  useFrame } from '@react-three/fiber';
 import { useAppStore } from '../../store';
 import NeuralText from '../UI/NeuralText';
 import HolographicCard from '../UI/HolographicCard';
@@ -28,21 +28,7 @@ const DNAStrand: React.FC = () => {
     }
   };
   
-  const DNAHelix = () => {
-    const groupRef = useRef<THREE.Group>();
-    
-    useFrame(({ clock }) => {
-      if (groupRef.current) {
-        groupRef.current.rotation.y = clock.getElapsedTime() * 0.5;
-      }
-    });
-    
-    return (
-      <group ref={groupRef}>
-        {/* DNA strands and nodes would be rendered here */}
-      </group>
-    );
-  };
+  // Removed unused DNAHelix function to resolve the error.
   
   const filteredNodes = category === 'all' 
     ? dnaNodes 
@@ -76,7 +62,7 @@ const DNAStrand: React.FC = () => {
         {['all', 'tech', 'life'].map((cat) => (
           <button
             key={cat}
-            onClick={() => setCategory(cat as any)}
+            onClick={() => setCategory(cat as 'all' | 'tech' | 'life')}
             className={`
               px-4 py-2 rounded-sm text-sm font-cyber uppercase tracking-wider
               transition-all duration-300

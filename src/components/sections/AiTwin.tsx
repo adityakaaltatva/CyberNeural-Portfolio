@@ -189,24 +189,19 @@ const AiTwin: React.FC = () => {
             )}
           </div>
           
-          <form onSubmit={handleSubmit}>
-            <div className="flex space-x-2">
-              <input
-                type="text"
-                value={userMessage}
-                onChange={(e) => setUserMessage(e.target.value)}
-                placeholder="Ask your AI twin a question..."
-                className="flex-1 bg-cyber-dark-800/70 text-white border border-glitch-purple-500/30 rounded-sm px-3 py-2 text-sm focus:outline-none focus:border-glitch-purple-500"
-              />
-              <CyberButton
-                type="submit"
-                color="purple"
-                disabled={isThinking || !userMessage.trim()}
-              >
-                <SendHorizonal size={16} />
-              </CyberButton>
-            </div>
-          </form>
+          <form onSubmit={handleSubmit} className="flex items-center space-x-2 mt-4">
+  <input
+    type="text"
+    value={userMessage}
+    onChange={(e) => setUserMessage(e.target.value)}
+    placeholder="Ask me anything..."
+    className="w-full px-4 py-2 bg-cyber-dark-700 border border-glitch-purple-500/30 rounded text-white placeholder-white/40"
+  />
+  <CyberButton color="purple" type="submit" disabled={isThinking}>
+    <SendHorizonal size={16} />
+  </CyberButton>
+</form>
+
         </HolographicCard>
         
         <div className="text-center text-white/50 text-xs font-code">
